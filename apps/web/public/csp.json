@@ -73,7 +73,16 @@
     "https://testnet.evm.nodes.onflow.org",
     "https://mainnet.evm.nodes.onflow.org",
     "https://evm.flowscan.io",
-    "https://raw.githubusercontent.com/onflow/assets/main/tokens/*"
+    "https://raw.githubusercontent.com/onflow/assets/main/tokens/*",
+    "https://mainnet.zircuit.com",
+    "https://proxyd-ingress-eu.mainnet.zircuit.com",
+    "https://explorer.zircuit.com",
+    "https://graph.swap.w3us.site",
+    "https://apiv1.staging.swap.zircuit.com",
+    "https://apiv2.staging.swap.zircuit.com",
+    "https://info.staging.swap.zircuit.com",
+    "https://v2-info.staging.swap.zircuit.com/",
+    "https://raw.githubusercontent.com/protofire/token-list/refs/heads/main/networks/zircuit.json"
   ],
   "workerSrc": [
     "'self'",

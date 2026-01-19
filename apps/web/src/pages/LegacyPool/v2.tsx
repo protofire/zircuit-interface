@@ -38,7 +38,7 @@ const PageWrapper = styled(AutoColumn)`
 `
 
 const LPFeeExplainer = styled(DataCard)`
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ffc2c2 0%, #de6579 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #21C95E 0%, #15863C 100%);
   margin: 0 0 16px 0;
   overflow: hidden;
 `
@@ -64,6 +64,12 @@ const ResponsiveButtonPrimary = styled(ButtonPrimary)`
 const ResponsiveButtonSecondary = styled(ButtonSecondary)`
   height: 40px;
   width: fit-content;
+  color: ${({ theme }) => theme.accent2};
+  border: 1px solid ${({ theme }) => theme.accent2};
+  &:hover {
+    border: 1px solid ${({ theme }) => theme.accent2};
+    opacity: 0.8;
+  }
   ${({ theme }) => theme.deprecated_mediaWidth.deprecated_upToSmall`
     width: 48%;
   `};

@@ -233,6 +233,7 @@ export function useDerivedSwapInfo(state: SwapState): SwapInfo {
       UniverseChainId.Mode,
       UniverseChainId.FlowTestnet,
       UniverseChainId.FlowMainnet,
+      UniverseChainId.Zircuit,
     ].includes(chainId)
       ? false
       : isClassicTrade(trade.trade) &&
@@ -418,7 +419,7 @@ export function useInitialCurrencyState(): {
     return queryParametersToCurrencyState(parsedQs)
   }, [parsedQs])
 
-  const supportedChainId = useSupportedChainId(parsedCurrencyState.chainId ?? chainId) ?? UniverseChainId.FlowMainnet
+  const supportedChainId = useSupportedChainId(parsedCurrencyState.chainId ?? chainId) ?? UniverseChainId.Zircuit
   const hasCurrencyQueryParams =
     parsedCurrencyState.inputCurrencyId || parsedCurrencyState.outputCurrencyId || parsedCurrencyState.chainId
 

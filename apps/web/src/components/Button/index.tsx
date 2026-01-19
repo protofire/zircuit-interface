@@ -67,27 +67,27 @@ export const BaseButton = styled(RebassButton)<BaseButtonProps>`
 `
 
 export const ButtonPrimary = styled(BaseButton)`
-  background-color: ${({ theme }) => theme.accent1};
+  background-color: ${({ theme }) => theme.accent2};
   font-size: 20px;
   font-weight: 535;
   padding: 16px;
   color: ${({ theme }) => theme.neutralContrast};
   &:focus {
-    box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.05, theme.accent1)};
-    background-color: ${({ theme }) => darken(0.05, theme.accent1)};
+    box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.05, theme.accent2)};
+    background-color: ${({ theme }) => darken(0.05, theme.accent2)};
   }
   &:hover {
-    background-color: ${({ theme }) => darken(0.05, theme.accent1)};
+    background-color: ${({ theme }) => darken(0.05, theme.accent2)};
   }
   &:active {
-    box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.1, theme.accent1)};
-    background-color: ${({ theme }) => darken(0.1, theme.accent1)};
+    box-shadow: 0 0 0 1pt ${({ theme }) => darken(0.1, theme.accent2)};
+    background-color: ${({ theme }) => darken(0.1, theme.accent2)};
   }
   &:disabled {
     background-color: ${({ theme, altDisabledStyle, disabled }) =>
-      altDisabledStyle ? (disabled ? theme.accent1 : theme.surface3) : theme.surface3};
+      altDisabledStyle ? (disabled ? theme.accent2 : theme.surface3) : theme.accent2};
     color: ${({ altDisabledStyle, disabled, theme }) =>
-      altDisabledStyle ? (disabled ? theme.neutralContrast : theme.neutral2) : theme.neutral2};
+      altDisabledStyle ? (disabled ? theme.accent1 : theme.neutral2) : theme.accent1};
     cursor: auto;
     box-shadow: none;
     border: 1px solid transparent;
@@ -162,7 +162,7 @@ export const ButtonGray = styled(BaseButton)`
 
 export const ButtonSecondary = styled(BaseButton)`
   border: 1px solid ${({ theme }) => theme.accent2};
-  color: ${({ theme }) => theme.accent1};
+  color: ${({ theme }) => theme.accent2};
   background-color: transparent;
   font-size: 16px;
   border-radius: 12px;
@@ -170,14 +170,14 @@ export const ButtonSecondary = styled(BaseButton)`
 
   &:focus {
     box-shadow: 0 0 0 1pt ${({ theme }) => theme.accent2};
-    border: 1px solid ${({ theme }) => theme.accent1};
+    border: 1px solid ${({ theme }) => theme.accent2};
   }
   &:hover {
-    border: 1px solid ${({ theme }) => theme.accent1};
+    border: 1px solid ${({ theme }) => theme.accent2};
   }
   &:active {
     box-shadow: 0 0 0 1pt ${({ theme }) => theme.accent2};
-    border: 1px solid ${({ theme }) => theme.accent1};
+    border: 1px solid ${({ theme }) => theme.accent2};
   }
   &:disabled {
     opacity: 50%;
@@ -238,7 +238,7 @@ export const ButtonOutlined = styled(BaseButton)`
 
 export const ButtonEmpty = styled(BaseButton)`
   background-color: transparent;
-  color: ${({ theme }) => theme.accent1};
+  color: ${({ theme }) => theme.neutral2};
   display: flex;
   justify-content: center;
   align-items: center;
